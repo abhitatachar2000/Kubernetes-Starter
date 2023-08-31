@@ -1,0 +1,43 @@
+/* Custom styles for the calculator */
+.container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #calculatorForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+  
+  .btn-number,
+  .btn-operator {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  #result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .btn-control{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .inp-fld{
+    border-color: black;
+  }

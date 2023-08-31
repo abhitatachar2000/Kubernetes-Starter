@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1>Calculator</h1>
+    <form id="calculatorForm">
+      <div class="form-group" style="margin-bottom: 20px; width: 100%;">
+        <input type="text" class="form-control inp-fld" id="inputField" readonly>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('7')">7</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('8')">8</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('9')">9</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('4')">4</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('5')">5</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('6')">6</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('1')">1</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('2')">2</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('3')">3</button>
+            </div>
+            <div class="col-8">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('0')">0</button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-secondary btn-block btn-number" onclick="addToInput('.')">.</button>
+            </div>
+            <div class="col-8">
+                <button type="button" class="btn btn-success btn-block btn-control" onclick="calculate()">Calculate</button>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-danger btn-block btn-control" onclick="clearInput()">Clear</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-block btn-operator" onclick="addToInput('+')">+</button>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-block btn-operator" onclick="addToInput('-')">-</button>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-block btn-operator" onclick="addToInput('*')">*</button>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-block btn-operator" onclick="addToInput('/')">/</button>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-primary btn-block btn-operator" onclick="addToInput('%')">%</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
